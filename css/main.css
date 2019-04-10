@@ -1,0 +1,15 @@
+html {
+  font-family: "Open Sans", sans-serif;
+  background-color: #fff;
+  color: #000;
+  padding: 0;
+  border: 0;
+}
+
+@media only screen and (min-width: 60em) {
+
+  button:hover {
+    background-color: #f2f2f2;
+  }
+
+}

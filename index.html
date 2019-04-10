@@ -8,6 +8,7 @@
   <link href="css/type.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
 <body class="grid">
 
@@ -21,12 +22,12 @@
       </fieldset>
       <form class="push-0" method="POST" action="https://formspree.io/">
         <div class="unit xs-1-2 m-1-2 l-1-2 push">
-          <label for="name">Name</label>
-          <input id="nome" name="name" type="hidden">
+          <label for="one">Name</label>
+          <input id="one" name="name">
         </div>
         <div class="unit-xs-1-2 m-1-2 l-1-2 push">
           <label for="age">Age</label>
-          <input id="age" name="age" required>
+          <input id="age" name="age">
         </div>
         <div class="push">
           <label for="email">Email</label>
@@ -54,6 +55,8 @@
         </div>
         <div>
           <button class="btn btn-light mega" type="submit">Register for the trip!"</button>
+          <p>Request to join the mission</p>
+          <input type="hidden">
 
         </div>
       </form>

@@ -4,28 +4,30 @@
   <meta charset="utf-8">
   <title>Contact form</title>
   <link href="css/modules.css" rel="stylesheet">
+  <link href="css/grid.css" rel="stylesheet">
   <link href="css/type.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
-<body>
+<body class="grid">
 
-  <section class="contact pad-t-2 pad-b-2">
+  <section class="unit contact pad-t-2 pad-b-2">
     <div class="max-length">
       <h1>Want to go to Mars?</h1>
       <p>We’re looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</p>
 
-      <form class="push-0" method="POST" action="https://formapree.io/bradlet@algonquincollege.com">
-        <div class="push">
+      <form class="push-0" method="POST" action="https://formspree.io/">
+        <h2>Personal details</h2>
+        <div class="unit xs-1-2 m-1-2 l-1-2push">
           <label for="name">Name</label>
           <input id="name" name="name" required>
         </div>
-        <div class="push">
+        <div class="unit-xs-1-2 m-1-2 l-1-2 push">
           <label for="age">Age</label>
-          <input id="age" age="age" required>
+          <input id="age" required>
         </div>
         <div class="push">
-          <label for="Email">Your email</label>
+          <label for="email">Email</label>
           <input id="email" type="email" placeholder="me@me.com" name="email" required>
         </div>
         <div class="push">
@@ -38,15 +40,16 @@
           </select>
         </div>
         <div class="push">
-          <label for="Personal-details">Address</label>
-          <textarea id="details" name="message" required></textarea>
+          <label for="personal-details">Address</label>
+          <textarea id="personal-details" name="message" required></textarea>
         </div>
+        <h2>Mission statement</h2>
         <div class="push">
-          <label for="Mission statement">Why do you want to go to Mars?</label>
-          <textarea id="details" name="message" required></textarea>
+          <label for="mission-statement">Why do you want to go to Mars?</label>
+          <textarea id="mission-statement" name="message" required></textarea>
         </div>
         <div>
-          <button class="btn btn-light mega" type="Request to join the mission">Register for the trip!</button>
+          <button class="btn btn-light mega" type="submit">Register for the trip!"</button>
         </div>
       </form>
     </div>

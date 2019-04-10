@@ -12,28 +12,28 @@
 </head>
 <body class="grid">
 
-  <section class="unit contact pad-t-2 pad-b-2">
+  <section class="unit contact pad-t-2 pad-b-2 max-length gutter-1-8">
     <div class="max-length">
       <h1>Want to go to Mars?</h1>
-      <p>We’re looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</p>
+      <p class="mega">We’re looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</p>
 
       <fieldset>
-        <legend>Personal details</legend>
+        <legend class="mega italic">Personal details</legend>
       </fieldset>
       <form class="push-0" method="POST" action="https://formspree.io/">
-        <div class="unit xs-1-2 m-1-2 l-1-2 push">
+        <div class="unit xs-1 m-1 l-1-2 push name">
           <label for="one">Name</label>
           <input id="one" name="name">
         </div>
-        <div class="unit-xs-1-2 m-1-2 l-1-2 push">
+        <div class="unit-xs-1 m-1 l-1-2 push age">
           <label for="age">Age</label>
           <input id="age" name="age">
         </div>
-        <div class="push">
+        <div class="unit-xs-1 m-1 l-1-2 push email">
           <label for="email">Email</label>
-          <input id="email" type="email" placeholder="me@me.com" name="email" required>
+          <input id="email" type="email" name="email" required>
         </div>
-        <div class="push">
+        <div class="unit-xs-1 m-1 l-1-2 push fit">
           <label for="name">Physical fitness</label>
           <select id="name" name="name">
             <option>Super-human</option>
@@ -47,17 +47,16 @@
           <textarea id="personal-details" name="message" required></textarea>
         </div>
         <fieldset>
-          <legend>Mission statement</legend>
+          <legend class="mega italic">Mission statement</legend>
         </fieldset>
-        <div class="push">
+        <div>
           <label for="mission-statement">Why do you want to go to Mars?</label>
           <textarea id="mission-statement" name="message" required></textarea>
         </div>
-        <div>
-          <button class="btn btn-light mega" type="submit">Register for the trip!"</button>
-          <p>Request to join the mission</p>
+        <div class="pad-t">
+          <button class="btn btn-dark mega" type="submit">Register for the trip!</button>
+          <p class="hidden">Request to join the mission</p>
           <input type="hidden">
-
         </div>
       </form>
     </div>
